@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+Terribly Tiny Tales Assignment Using ReactJs.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+"Histogram" that fetches text data from a URL, calculates the frequency of words in the text, and displays a bar chart representing the top 20 most frequent words. 
+It also includes a button to export the histogram data as a CSV file.
 
-In the project directory, you can run:
+HOSTED LINK: http://monazirhasan27.github.io/tttAssignment
 
-### `npm start`
+COMPONENTS:
+1. App.js: It is a parent component in which child component is Rendered. This is the main component of entire application.
+2. Histogram.js: It is a Child Component.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+LIBERARIES USED:
+1. React: The code is written as a React functional component. React is a JavaScript library for building user interfaces.
+2. useState: It is a React Hook that allows us to add state to functional components. In this code, it is used to manage the state of the "text" and "histogramData" variables.
+3. axios: It is a popular JavaScript library used to make HTTP requests. Here, it is used to fetch the text data from the given        URL('https://www.terriblytinytales.com/test.txt').
+5. recharts: It is a charting library built with React and D3. It provides a set of reusable React components for creating charts. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The following components from recharts are used:
 
-### `npm test`
+-> BarChart: A component for rendering a bar chart.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-> Bar: Represents a bar within the bar chart.
 
-### `npm run build`
+-> XAxis: Renders the x-axis of the bar chart.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-> YAxis: Renders the y-axis of the bar chart.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-> CartesianGrid: Renders a grid in the background of the bar chart.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-> Tooltip: Displays tooltips when hovering over the bars.
 
-### `npm run eject`
+-> Legend: Renders a legend for the chart.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+CONCLUSION:
+The code utilizes React, axios, and recharts libraries to fetch data, process it, and render a bar chart representing the frequency of the top 20 words.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+SCREENSHOTS:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img width="956" alt="ttt1" src="https://github.com/monazirhasan27/tttAssignment/assets/107314495/447d1719-2766-45c3-bcdf-750e726b1aac">
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="960" alt="ttt2" src="https://github.com/monazirhasan27/tttAssignment/assets/107314495/87519657-3864-4daa-8077-365667c44df7">
